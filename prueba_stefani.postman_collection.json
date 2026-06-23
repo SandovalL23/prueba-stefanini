@@ -1,0 +1,40 @@
+{
+  "info": {
+    "_postman_id": "5659607f-f417-4f31-8017-201c2519bcb2",
+    "name": "prueba_stefani",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33753338"
+  },
+  "item": [
+    {
+      "name": "http://localhost:7800/api_prueba_stefanini/v1/product-requests",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"tipoProducto\" : \"AHORROS\",\r\n    \"numeroDocumento\" : \"1007795113\",\r\n    \"nombreCliente\" : \"Daniel Esteban Sandoval Lopez\",\r\n    \"correo\" : \"example@example.com\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:7800/api_prueba_stefanini/v1/product-requests",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "7800",
+          "path": [
+            "api_prueba_stefanini",
+            "v1",
+            "product-requests"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

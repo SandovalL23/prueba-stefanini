@@ -1,0 +1,66 @@
+{
+  "swagger" : "2.0",
+  "info" : {
+    "title" : "api_prueba_stefanini",
+    "version" : "1.0.0",
+    "description" : "api_prueba_stefanini"
+  },
+  "paths" : {
+    "/product-requests" : {
+      "post" : {
+        "operationId" : "postProduct-requests",
+        "responses" : {
+          "200" : {
+            "description" : "The operation was successful.",
+            "schema" : {
+              "$ref" : "#/definitions/responseService"
+            }
+          }
+        },
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "description" : "Insert a product-requests",
+        "parameters" : [ {
+          "name" : "body",
+          "in" : "body",
+          "schema" : {
+            "$ref" : "#/definitions/requestService"
+          },
+          "description" : "The request body for the operation",
+          "required" : true
+        } ]
+      }
+    }
+  },
+  "basePath" : "/api_prueba_stefanini/v1",
+  "definitions" : {
+    "requestService" : {
+      "type" : "object",
+      "properties" : {
+        "tipoProducto" : {
+          "type" : "string"
+        },
+        "numeroDocumento" : {
+          "type" : "string"
+        },
+        "nombreCliente" : {
+          "type" : "string"
+        },
+        "correo" : {
+          "type" : "string"
+        }
+      }
+    },
+    "responseService" : {
+      "type" : "object",
+      "properties" : {
+        "codigo" : {
+          "type" : "string"
+        },
+        "descripcion" : {
+          "type" : "string"
+        }
+      }
+    }
+  }
+}
